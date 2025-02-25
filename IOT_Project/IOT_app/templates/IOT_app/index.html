@@ -121,7 +121,7 @@ tr:nth-child(even) {
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
   <div class="topnav">
-    <a class="active"><h1 class="awesome" ><b>MUNCIPAL CORPORATION</b></h1></a>
+    <a class="active" href="{% url 'index' %}"><h1 class="awesome"><b>MUNCIPAL CORPORATION</b></h1></a>
     <a href="{{'google'}}"><h1>MAPS</h1></a>
   </div>
 
@@ -131,10 +131,10 @@ tr:nth-child(even) {
    <a href="#"><div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">CATEGORY</button>
     <div id="myDropdown" class="dropdown-content">
-      <a href="{{'bin1'}}">BIN1</a>
-      <a href="{{'bin2'}}">BIN2</a>
-      <a href="{{'bin3'}}">BIN3</a>
-      <a href="{{'graphs'}}">GRAPHS</a>
+      <a href="{% url 'bin1' %}">BIN1</a>
+      <a href="{% url 'bin2' %}">BIN2</a>
+      <a href="{% url 'bin3' %}">BIN3</a>
+      <a href="{% url 'graphs' %}">GRAPHS</a>
   </div>
 </div></a>
 
